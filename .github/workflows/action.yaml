@@ -1,9 +1,10 @@
 name: Docker image to public
 
 on:
+  release:
+    types: [ published ]
   push:
-    tags:
-      - "v*.*"
+    branches: [ "master" ]
 jobs:
   push_to_registries:
     name: Push images
