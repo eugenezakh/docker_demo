@@ -6,7 +6,7 @@ on:
       - "v*.*"
 jobs:
   push_to_registries:
-    name: Push image
+    name: Push images
     runs-on: ubuntu-latest
     permissions:
       packages: write
