@@ -44,7 +44,7 @@ jobs:
           SLACK_ICON: https://github.com/rtCamp.png?size=48
           SLACK_MESSAGE: 'Pushing docker_demo:${{ github.run_number }} image was successful'
           SLACK_TITLE: Post Title
-          SLACK_USERNAME: rtCamp
+          SLACK_USERNAME: eugenezakharenko
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       - name: Slack notif negative
         uses: rtCamp/action-slack-notify@v2
@@ -55,5 +55,5 @@ jobs:
           SLACK_ICON: https://github.com/rtCamp.png?size=48
           SLACK_MESSAGE: 'Warning! Pushing docker_demo:${{ github.run_number }} image was failed'
           SLACK_TITLE: Post Title
-          SLACK_USERNAME: rtCamp
+          SLACK_USERNAME: eugenezakharenko
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
