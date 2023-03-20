@@ -4,6 +4,7 @@ on:
   release:
     types: [ published ]
   push:
+    branches: [ "master" ]
 jobs:
   push_to_registries:
     name: Push images
